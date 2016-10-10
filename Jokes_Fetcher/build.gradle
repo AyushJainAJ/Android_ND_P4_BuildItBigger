@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.udacity.gradle.builditbigger.joke.show"
+        minSdkVersion 20
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        free {
+        }
+        paid {
+        }
+    }
+}
+
+dependencies {
+    compile project(':Jokes_Display')
+    compile project(path: ':GCE_Server', configuration: 'android-endpoints')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    freeCompile 'com.google.android.gms:play-services:7.5.0'
+}
