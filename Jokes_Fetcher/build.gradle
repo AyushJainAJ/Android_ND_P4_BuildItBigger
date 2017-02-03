@@ -29,5 +29,5 @@ dependencies {
     compile project(':Jokes_Display')
     compile project(path: ':GCE_Server', configuration: 'android-endpoints')
     compile 'com.android.support:appcompat-v7:24.2.1'
-    freeCompile 'com.google.android.gms:play-services:7.5.0'
+    freeCompile 'com.google.android.gms:play-services-ads:7.5.0'
 }
