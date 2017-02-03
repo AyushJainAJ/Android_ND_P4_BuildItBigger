@@ -64,7 +64,7 @@ public class JokeFetchTask extends AsyncTask<String, Void, String> {
     protected void onPostExecute(String joke) {
         listener.onJokeFetched(joke);
         if (dialog.isShowing()) {
-            dialog.hide();
+            dialog.cancel();
         }
     }
 
