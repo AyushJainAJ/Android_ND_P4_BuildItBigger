@@ -1,6 +1,8 @@
-#Android_ND_P4_BuildItBigger
+#Build It Bigger
+##Udacity Android Nanodegree program
+###Project 4
 
-This is an Android project developed as part of Udacity Android nanodegree course.
+An application developed to fetch user provided jokes via Google Cloud Endpoints. 
 
 The application has 2 flavors, free and paid.
 It uses multiple libraries and Google Cloud Endpoints and contains of four modules:
